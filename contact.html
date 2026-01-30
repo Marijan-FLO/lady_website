@@ -7,34 +7,29 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <input type="checkbox" id="lang-switch">
     <header>
-        <div class="language-toggle">
-            <label for="lang-switch"><span class="lang-fr">FR</span><span class="lang-en">EN</span></label>
-        </div>
         <nav>
             <ul>
-                <li><a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a></li>
-                <li><a href="mission.html"><span class="lang-fr">À Propos</span><span class="lang-en">About us</span></a></li>
-                <li><a href="quiz.html"><span class="lang-fr">Le coin des Quiz</span><span class="lang-en">Test your knowledge</span></a></li>
-                <li><a href="agir.html"><span class="lang-fr">Catalogue</span><span class="lang-en">Catalog</span></a></li>
-                <li><a href="contact.html" class="active"><span class="lang-fr">Contact</span><span class="lang-en">Contact</span></a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="mission.html">À Propos</a></li>
+                <li><a href="quiz.html">Le coin des Quiz</a></li>
+                <li><a href="agir.html">Catalogue</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h1><span class="lang-fr">Contactez-nous</span><span class="lang-en">Contact us</span></h1>
-            <p class="lang-fr lang-block">Nous sommes là pour répondre à vos questions et vous accompagner dans votre parcours. N'hésitez pas à nous contacter par le formulaire ci-dessous, par email ou via WhatsApp.</p>
-            <p class="lang-en lang-block">We're here to answer your questions and support your journey. Reach out via the form, email, or WhatsApp.</p>
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes là pour répondre à vos questions et vous accompagner dans votre parcours. N'hésitez pas à nous contacter par le formulaire ci-dessous, par email ou via WhatsApp.</p>
         </section>
 
         <!-- Contact Form -->
         <section>
             <form class="contact-form" action="#" method="POST">
                 <div class="form-group">
-                    <label for="name"><span class="lang-fr">Nom *</span><span class="lang-en">Name *</span></label>
+                    <label for="name">Nom *</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
@@ -42,19 +37,19 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message"><span class="lang-fr">Message *</span><span class="lang-en">Message *</span></label>
+                    <label for="message">Message *</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" class="btn"><span class="lang-fr">Envoyer le message</span><span class="lang-en">Send message</span></button>
+                <button type="submit" class="btn">Envoyer le message</button>
             </form>
         </section>
 
         <!-- Contact Information -->
         <section class="contact-info">
-            <h2><span class="lang-fr">Autres moyens de contact</span><span class="lang-en">Other ways to reach us</span></h2>
+            <h2>Autres moyens de contact</h2>
             <p><strong>Email :</strong> <a href="mailto:lecomitevertcontact@gmail.com">lecomitevertcontact@gmail.com</a></p>
             <p>
-                <a href="https://wa.me/224629562040" class="btn" target="_blank"><span class="lang-fr">Nous contacter via WhatsApp</span><span class="lang-en">Contact us via WhatsApp</span></a>
+                <a href="https://wa.me/224629562040" class="btn" target="_blank">Nous contacter via WhatsApp</a>
             </p>
         </section>
 
@@ -67,23 +62,31 @@
 
         <!-- Social & Address Block -->
         <section class="social-block">
-            <h2><span class="lang-fr">Suivez-nous</span><span class="lang-en">Follow us</span></h2>
+            <h2>Suivez-nous</h2>
             <div class="social-icons">
-                <a href="#" class="social-icon">IG</a>
-                <a href="#" class="social-icon">FB</a>
-                <a href="#" class="social-icon">IN</a>
+                <a href="https://www.instagram.com/" class="social-icon" target="_blank" rel="noopener">IG</a>
+                <a href="https://www.facebook.com/" class="social-icon" target="_blank" rel="noopener">FB</a>
+                <a href="https://www.tiktok.com/" class="social-icon" target="_blank" rel="noopener">TT</a>
             </div>
             <p class="project-address">
-                <a href="https://maps.google.com/?q=Votre+adresse+projet" target="_blank" rel="noopener">
-                    <span class="lang-fr">Adresse du projet (Google Maps)</span>
-                    <span class="lang-en">Project address (Google Maps)</span>
-                </a>
+                <a href="https://maps.google.com/?q=Votre+adresse+projet" target="_blank" rel="noopener">Adresse du projet (Google Maps)</a>
             </p>
         </section>
     </main>
 
-    <footer>
-        <p><span class="lang-fr">&copy; 2025 Comité Vert Guinée. Tous droits réservés.</span><span class="lang-en">&copy; 2025 Comité Vert Guinée. All rights reserved.</span></p>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Nos actualités</h4>
+                <p>Abonnez-vous à notre journal vert pour recevoir des nouvelles et des ressources.</p>
+            </div>
+            <div class="footer-section footer-contact">
+                <h4>Contactez-nous</h4>
+                <a href="https://wa.me/224629562040" target="_blank" rel="noopener">WhatsApp</a>
+                <a href="mailto:lecomitevertcontact@gmail.com">lecomitevertcontact@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2025 Comité Vert Guinée. Tous droits réservés.</div>
     </footer>
 </body>
 </html>

@@ -59,64 +59,163 @@ nav ul li a.active {
     font-weight: 600;
 }
 
-/* Language Switch */
-#lang-switch {
-    display: none;
+/* Header control - language selector removed (site en Français uniquement) */
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
-.language-toggle {
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
+.team-member {
+    background: #fff;
+    border: 1px solid #e8efe4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0 0.25rem 0;
+    font-size: 1.1rem;
+    color: #0b3b1a;
+}
+
+.team-member a.name-link {
+    color: #0b3b1a;
+    text-decoration: none;
     font-weight: 600;
 }
 
-.language-toggle label {
-    cursor: pointer;
-    padding: 0.35rem 0.75rem;
-    border: 1px solid #408224;
-    border-radius: 20px;
-    color: #408224;
+.team-member p.role {
+    color: #507a53;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p.desc {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Hero banner with nature background */
+.hero-banner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    height: 460px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(10,30,12,0.45), rgba(10,30,12,0.25)), url('../images/Header.jpg');
+}
+
+.hero-content {
+    position: relative;
+    left: 4%;
+    z-index: 10;
+    width: 90%;
+    max-width: 600px;
+    color: #ffffff;
+}
+
+.hero-title {
+    font-size: 2.35rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.05;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+    opacity: 0.95;
+}
+
+/* Footer */
+footer.site-footer {
+    background: #f6faf4;
+    border-top: 1px solid #e6efe3;
+    padding: 2rem 1rem;
+}
+
+.hero-subtitle {
+    color: #ffffff;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.footer-section h4 {
+    color: #0b3b1a;
+    margin-bottom: 0.5rem;
+}
+
+.social-list {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.social-list a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     background: #ffffff;
-    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    color: #0b3b1a;
+    text-decoration: none;
+    font-weight: 700;
 }
 
-.language-toggle label:hover {
-    background: #f2f7f1;
-}
-
-/* Language visibility */
-.lang-fr {
-    display: inline;
-}
-
-.lang-en {
-    display: none;
-}
-
-.lang-block {
+.footer-contact a {
     display: block;
+    color: #0b3b1a;
+    text-decoration: none;
+    margin-bottom: 0.35rem;
 }
 
-#lang-switch:checked ~ header .lang-fr,
-#lang-switch:checked ~ main .lang-fr,
-#lang-switch:checked ~ footer .lang-fr {
-    display: none;
+.footer-bottom {
+    text-align: center;
+    margin-top: 1.25rem;
+    color: #556b56;
+    font-size: 0.95rem;
 }
 
-#lang-switch:checked ~ header .lang-en,
-#lang-switch:checked ~ main .lang-en,
-#lang-switch:checked ~ footer .lang-en {
-    display: inline;
+/* Responsive */
+@media (max-width: 900px) {
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
-#lang-switch:checked ~ header .lang-en.lang-block,
-#lang-switch:checked ~ main .lang-en.lang-block,
-#lang-switch:checked ~ footer .lang-en.lang-block {
-    display: block;
+@media (max-width: 600px) {
+    .hero-banner { height: 360px; }
+    .team-grid { grid-template-columns: 1fr; }
+    nav ul { justify-content: space-between; padding: 0 1rem; }
+    .footer-grid { grid-template-columns: 1fr; }
 }
 
 /* Main Content */
