@@ -75,10 +75,10 @@
             </ul>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="images/LADY.jpeg" alt="Photo membre 1">
+                    <img src="images/Ladyok.jpeg" alt="Photo membre 1">
                     <h3><a class="name-link" href="https://www.linkedin.com/in/lady-s-524591279/" target="_blank" rel="noopener">Lady GREEN</a></h3>
                     <p class="role">Fondatrice & Coordinatrice</p>
-                    <p class="desc">Lady pilote la vision du projet et conçoit les contenus pédagogiques liés à l’environnement, à la RSE et à la citoyenneté. </p>
+                    <p class="desc">Diplômée en Green Digital, spécialisée en économie circulaire et gestion des déchets, je suis actuellement chargée de mission RSE en France. Comité Vert Guinée est mon rêve devenu projet concret, pour construire une écologie utile, sincère et adaptée à notre réalité en Guinée.</p>
                 </div>
                 <div class="team-member">
                     <img src="images/marijan.jpeg" alt="Photo membre 2">
@@ -88,7 +88,7 @@
                 </div>
                 <div class="team-member">
                     <img src="images/Mohamed.jpeg" alt="Photo membre 3">
-                    <h3><a class="name-link" href="https://www.linkedin.com/company/comité-vert-guinée/posts/?feedView=all" target="_blank" rel="noopener">Mohamed SAKO</a></h3>
+                    <h3><a class="name-link" href="https://www.linkedin.com/in/mohamed-sakho-03774b345/" target="_blank" rel="noopener">Mohamed SAKHO</a></h3>
                     <p class="role">Ambassadeur Terrain – Guinée</p>
                     <p class="desc"> Les ambassadeurs du Comité Vert Guinée sont des relais locaux engagés. Ils participent à la mise en œuvre des actions de sensibilisation et à la diffusion des messages du projet sur le terrain.</p>
                 </div>
@@ -120,7 +120,7 @@
             <div class="team-grid">
                 <div class="team-member">
                     <img src="images/madiba.png" alt="Photo membre 1">
-                    <h3><a class="name-link" href="https://www.linkedin.com/company/comité-vert-guinée/posts/?feedView=all" target="_blank" rel="noopener">Abdoul Madiba FOFANA</a></h3>
+                    <h3><a class="name-link" href="https://www.linkedin.com/in/abdoul-madiba-fofana/" target="_blank" rel="noopener">Abdoul Madiba FOFANA</a></h3>
                     <p class="role">Contenus Éducatifs - Quiz & Journal Vert</p>
                     <p class="desc">Fondateur de Guinea Culture, Abdoul Madiba Fofana contribue au Comité Vert Guinée en tant que créateur de contenus éducatifs, notamment les quiz et le Journal Vert.</p>
                 </div>
@@ -166,6 +166,22 @@
         </div>
         <div class="footer-bottom">&copy; 2026 Comité Vert Guinée. Tous droits réservés.</div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
 

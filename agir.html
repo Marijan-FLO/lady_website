@@ -32,7 +32,7 @@
                     <img src="images/cat.jpeg" alt="Agir avec nous">
                 </div>
                 <div class="guide-content">
-                    <h1>Agir avec nous</h1>
+                    <h1>Le Catalogue CVG</h1>
                     <p>Le catalogue du Comité Vert Guinée rassemble l’ensemble des offres, contenus et formats développés par le Comité Vert Guinée autour des enjeux environnementaux et sociaux.</p>
                     <p>Il présente à la fois les contenus gratuits proposés par le média, les formats de sensibilisation, les kits thématiques à la carte, le calendrier de déploiement des temps forts RSE ainsi que le cadre de travail et la logique d’accompagnement proposée aux organisations.</p>
                     <p>Le catalogue apporte des éléments de compréhension sur notre démarche, les raisons de ce positionnement, les contenus mobilisables et les bénéfices d’une collaboration, en détaillant concrètement les formats, les thématiques et les modalités de déploiement.</p>
@@ -74,6 +74,22 @@
         </div>
         <div class="footer-bottom">&copy; 2026 Comité Vert Guinée. Tous droits réservés.</div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
 

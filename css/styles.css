@@ -432,7 +432,7 @@ p {
 
 .guide-image {
     width: 100%;
-    height: 300px;
+    min-height: 400px;
     background-color: #e0e0e0;
     display: flex;
     align-items: center;
